@@ -344,7 +344,9 @@ export default function App() {
           setModelCatalog(models);
           setModelCatalogStatus("ready");
         });
-        setGatewayMessage(`OpenRouter key connected. Loaded ${models.length} models.`);
+        setGatewayMessage(
+          `OpenRouter key connected. Loaded ${models.length} models.`,
+        );
       } catch (error) {
         if (cancelled) {
           return;
@@ -595,10 +597,8 @@ export default function App() {
                       }))
                     }
                   />
-                  <span>Hardcoded board</span>
-                  <small>
-                    Placeholder curated boards for now; replace them later.
-                  </small>
+                  <span>Real Jeopardy</span>
+                  <small>A few recent boards.</small>
                 </label>
               </div>
 
